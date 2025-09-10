@@ -1,12 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background: #3e65fe;
 }
-.logo-box{
+
+.logo-box {
   background: #fff;
   padding: 30px 120px;
   width: 550px;
@@ -15,12 +17,140 @@ body{
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius: 10px;
-  /* display: flex;
-  justify-content: center; */
   text-align: center;
-
 }
-.twitter-logo{
+
+.twitter-logo {
   width: 60px;
   height: 60px;
+}
+
+.logo-box h2 {
+  margin-bottom: 20px;
+}
+
+.logo-box button {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  border: 1px solid rgb(91, 84, 84);
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  margin-bottom: 15px;
+}
+
+.logo-box button:active {
+  background-color: aliceblue;
+  transition-duration: 0.5ms;
+}
+
+.google-logo {
+  width: 50px;
+  height: 20px;
+  align-items: center;
+}
+
+.apple-logo {
+  width: 30px;
+  height: 15px;
+}
+
+.logo-box span {
+  font-size: 12px;
+  color: rgb(53, 50, 50);
+  width: 40px;
+  background-color: white;
+  display: block;
+  margin: auto;
+  margin-top: -7px;
+}
+
+.logo-box input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgb(60, 60, 60);
+  margin-bottom: 10px;
+  padding: 8px 5px;
+  border-radius: 3px;
+  outline: 0;
+}
+
+::placeholder {
+  color: rgb(100, 115, 115);
+  font-size: 12px;
+}
+
+.logo-box form button {
+  background-color: black;
+  color: white;
+  padding: 8px 2px;
+  border: none;
+}
+
+.logo-box form button:active {
+  color: #fff;
+  background-color: black;
+}
+
+.logo-box p {
+  font-size: 14px;
+  color: #555;
+  margin: 40px 0px 50px;
+}
+
+.logo-box p a {
+  text-decoration: none;
+  list-style: none;
+  color: #3e65fe;
+  margin-left: 100px;
+}
+
+.password-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.password-wrapper input{
+  width: 100%;
+  padding-right: 40px;
+
+}
+.password-toggle{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size:14px;
+}
+.page-loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 6px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #3e65fe;
+  animation: spin 0.8s linear infinite;
+  /* margin: 50px auto; */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
